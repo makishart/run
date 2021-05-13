@@ -4,7 +4,7 @@ http {
   client_max_body_size 20m;
 
   server {
-    server_name bitclout.me;
+    server_name bitclout.makishart.com;
 
     location / {
       proxy_pass http://frontend:8080;
@@ -22,7 +22,7 @@ http {
   }
 
   server {
-    server_name api.bitclout.me;
+    server_name api.bitclout.makishart.com;
 	
     location / {
       proxy_pass http://core:17001;
